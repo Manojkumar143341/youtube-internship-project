@@ -1,0 +1,113 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fafafa;
+}
+
+.signin-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+.signin-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.signin-subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.signin-btn {
+  padding: 12px;
+  background: #f37254;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background: #d85e42;
+}
+
+.signin-footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+
+/* Existing signin styles stay the same */
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  color: #333;
+}
+
+.popup-box button {
+  padding: 8px 16px;
+  background-color: #f37254;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popup-box button:hover {
+  background-color: #d85e42;
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.popup-overlay {
+  z-index: 9999; /* higher priority */
+}

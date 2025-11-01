@@ -1,0 +1,285 @@
+/* ================= Navbar Container ================= */
+.Container_Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0 1rem;
+  background-color: rgb(33, 33, 33);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+/* ================= Logo + Burger ================= */
+.Burger_Logo_Navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.burger:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.burger p {
+  width: 1.2rem;
+  height: 0.1rem;
+  background-color: #fff;
+  margin: 2px 0;
+}
+
+.logo_div_Navbar {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo_div_Navbar img {
+  height: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+.logo_title_navbar {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ================= Searchbar ================= */
+.Searchbar {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+/* ================= Right Section ================= */
+.Navbar_Right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.vid_bell_Navbar {
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.vid_bell_Navbar:hover {
+  color: #3ea6ff;
+  transform: scale(1.1);
+}
+
+/* ================= Apps Grid ================= */
+.apps_Box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20px;
+  height: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.appBox {
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  margin: 1px;
+}
+
+/* ================= Auth/Profile ================= */
+.Auth_cont_Navbar {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.Auth_Btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #3ea6ff;
+  background-color: rgb(36, 36, 36);
+  border: 1px solid #3ea6ff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.Auth_Btn:hover {
+  background-color: #3ea6ff;
+  color: black;
+}
+
+.Chanel_logo_App {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #3ea6ff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.Chanel_logo_App:hover {
+  transform: scale(1.05);
+}
+
+.fstChar_logo_App {
+  user-select: none;
+}
+
+/* ================= Dropdown Menu ================= */
+.people_dropdown_menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: rgb(33, 33, 33);
+  border: 1px solid #3ea6ff;
+  border-radius: 4px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.people_dropdown_menu button {
+  width: 100%;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.people_dropdown_menu button:hover {
+  background-color: #3ea6ff;
+  color: black;
+}
+
+/* ================= Modals ================= */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(33, 33, 33);
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 2000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.modal input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.modal li {
+  margin-bottom: 10px;
+}
+
+.modal input[type="radio"] {
+  margin-right: 8px;
+}
+
+.modal button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #3ea6ff;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+
+.modal button:hover {
+  background-color: #287ba0;
+}
+
+/* ================= Animations ================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -55%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* ================= Mobile Styles ================= */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .Searchbar {
+    display: none;
+  }
+
+  .Navbar_Right {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 15px;
+    width: 200px;
+    border-top: 1px solid #555;
+    border-radius: 8px;
+    gap: 10px;
+    z-index: 100;
+  }
+
+  .Navbar_Right.open {
+    display: flex;
+  }
+}

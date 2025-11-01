@@ -1,0 +1,103 @@
+/* ==== LEFT SIDEBAR (COMPACT) ==== */
+.container_leftSidebar {
+  background-color: rgb(37, 37, 37);
+  width: 3.8rem; /* ⬅️ Reduced width */
+  height: calc(100vh - 3.55rem);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* ==== ICON BUTTONS ==== */
+.icon_sidebar_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.icon_sidebar {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.text_sidebar_icon {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.7rem; /* ⬅️ Smaller font */
+  line-height: 1rem;
+}
+
+.icon_sidebar_div:hover,
+.icon_sidebar_div.active {
+  color: white;
+  background-color: rgb(68, 68, 68);
+}
+
+/* ==== DRAWER SIDEBAR (UNCHANGED) ==== */
+.container_DrawaerLeftSidebar {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  z-index: 500;
+}
+
+.container2_DrawaerLeftSidebar {
+  height: calc(100vh - 3.6rem);
+  width: 10rem;
+  overflow-y: auto;
+  background-color: rgb(28, 28, 28);
+}
+
+.Drawer_leftsidebar,
+.libraryBtn_Drawerleftsidebar {
+  padding-top: 0.5rem;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.293);
+}
+
+.container3_DrawaerLeftSidebar {
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.488);
+}
+
+/* ==== CHANNELS IN DRAWER ==== */
+.subScriptions_lsdbar {
+  color: white;
+}
+
+.subScriptions_lsdbar h3 {
+  text-decoration: underline;
+  margin: 20px 10px;
+}
+
+.chanel_lsdbar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.chanel_lsdbar:hover {
+  color: rgb(77, 77, 243);
+}
+
+.chanel_lsdbar p {
+  background-color: grey;
+  color: white;
+  border-radius: 100%;
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
+.chanel_lsdbar div {
+  margin-left: 0.5rem;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .left-sidebar {
+    display: none;
+  }
+}

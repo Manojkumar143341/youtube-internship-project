@@ -1,0 +1,59 @@
+.navigation_Home{
+    color: white;
+    background-color: rgb(37,37,37);
+    position: sticky;
+    display: flex;
+    overflow-x: auto;
+    top: 0;
+    border-bottom: 2px solid rgb(128,128,128,0.27);
+}
+.btn_nav_home{
+    background-color: rgb(46,46,46);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.btn_nav_home:hover{
+    background-color: rgb(128,128,128);
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+.comment-btn {
+  margin-top: 12px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.small-comment-box {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.small-comment-input {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.small-comment-post-btn {
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+

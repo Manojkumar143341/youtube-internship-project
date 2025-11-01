@@ -1,0 +1,7 @@
+.downloaded-video {
+  margin-bottom: 20px;
+}
+
+.downloaded-video video {
+  border-radius: 10px;
+}

@@ -1,0 +1,169 @@
+/* Page Layout */
+.groups-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+/* Create Group Form */
+.create-group {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+}
+
+.create-group input {
+  padding: 10px 12px;
+  margin: 8px 6px 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: calc(50% - 12px);
+  transition: border-color 0.3s ease;
+}
+
+.create-group input:focus {
+  outline: none;
+  border-color: #ff0000; /* YouTube red accent */
+  box-shadow: 0 0 6px #ff0000aa;
+}
+
+.create-group button {
+  padding: 10px 25px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.create-group button:hover {
+  background: #cc0000;
+}
+
+/* Group List */
+.group-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-list li {
+  padding: 14px 20px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.group-list li:hover {
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+}
+
+.group-list strong {
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.group-list button {
+  margin-left: 8px;
+  padding: 8px 14px;
+  background: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.group-list button:hover {
+  background: #a30000;
+}
+
+/* Special orange button style for video call */
+.group-list button.video-call {
+  background: #ff9900;
+}
+
+.group-list button.video-call:hover {
+  background: #cc7a00;
+}
+
+/* Chat Box */
+.chat-box {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.1);
+  margin-top: 30px;
+}
+
+.chat-messages {
+  height: 280px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.chat-messages p {
+  margin: 6px 0;
+  padding: 8px 14px;
+  background: #ffecec;
+  border-radius: 20px;
+  max-width: 75%;
+  font-size: 1rem;
+  color: #cc0000; /* YouTube red */
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+}
+
+/* Message Input */
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.chat-input input:focus {
+  outline: none;
+  border-color: #ff0000;
+  box-shadow: 0 0 8px #ff0000aa;
+}
+
+.chat-input button {
+  padding: 12px 25px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+  background: #cc0000;
+}

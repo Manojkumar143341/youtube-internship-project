@@ -1,0 +1,101 @@
+.subscription-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.plans-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+}
+
+.plan-card h2 {
+  margin-bottom: 1rem;
+}
+
+.plan-card button {
+  margin-top: 1rem;
+  padding: 10px 15px;
+  background-color: #3399cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.plan-card button:hover {
+  background-color: #267399;
+}
+
+/* Borders for each plan */
+.free { border: 2px solid gray; }
+.bronze { border: 2px solid #cd7f32; }
+.silver { border: 2px solid #c0c0c0; }
+.gold { border: 2px solid #ffd700; }
+
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.popup-box button {
+  padding: 8px 16px;
+  background-color: #3399cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  background-color: #267399;
+}
+
+/* Smooth fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
